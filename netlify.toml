@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/40x.html"
+  status= 200

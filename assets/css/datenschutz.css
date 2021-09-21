@@ -1,0 +1,48 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(../img/background.jpg) no-repeat, center / contain no-repeat url("/img/place.png");
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text a{
+    border: none;
+}
+
+.text a:hover{
+    border: none;
+    color: rgb(0, 48, 121);
+}
+
+header h1{
+    font-weight: 400;
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+p{
+    padding: 0;
+    margin: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text{
+    padding: 40px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.verantwortlich{
+    padding: 20px
+}

@@ -1,0 +1,21 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(../img/background.jpg) no-repeat, center / contain no-repeat url("/img/place.png");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header .contentt{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+header .contentt h1{
+    font-weight: 400;
+    color: #fff;
+    font-size: 70px;
+}

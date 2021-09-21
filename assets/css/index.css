@@ -1,0 +1,170 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(../img/background.jpg) no-repeat, center / contain no-repeat url("/img/place.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header .contentt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+header .contentt h1{
+    font-weight: 400;
+    color: #fff;
+    font-size: 70px;
+}
+
+header .contentt h1 b{
+        /*background: linear-gradient(to right, rgb(0, 140, 255), rgb(0, 140, 255), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+        color: rgb(0, 140, 255);
+}
+
+
+
+.about{
+    /*
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(../img/background-dark.jpg) no-repeat, center / contain no-repeat url("/img/place.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    */
+    min-height: 100vh;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 130px;
+}
+
+
+
+
+
+
+#contact{
+    text-align: center;
+    user-select: none;
+    padding-top: 180px;
+    min-height: 100vh;
+}
+
+#contact p{
+  margin: 0;
+}
+
+#contact h1{
+  padding-bottom: 20px;
+}
+
+#contact input, #contact textarea{
+    width: 20%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid transparent;
+    transition: 0s;
+    animation-name: textboxout;
+    animation-duration: .2s;
+    background-color: #e7e7e7;
+}
+
+#contact textarea{
+  max-height: 70vh;
+  height: 30vh;
+  padding: 7px;
+  resize: vertical;
+  width: 40%;
+}
+
+#contact textarea:focus, #contact input:focus{
+  animation-name: textbox;
+  animation-duration: .2s;
+  border:  3px solid #0062ff;
+  transition: 0s;
+  background-color: #fff;
+}
+
+#contact button{
+    background-color: #0062ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 40px;
+}
+
+#contact button:hover{
+    background-color: #0044b3;
+}
+
+#contact button:active{
+    background-color: #002c74;
+}
+
+#contact button.reset{
+  border-radius: 10px;
+  padding: 2px 5px;
+  border: 3px solid;
+  color: #222;
+  background: transparent;
+}
+
+#contact button.reset:hover{
+  background-color: #222;
+  color: #fff;
+  border: 3px solid #222;
+}
+
+#contact button.reset:active{
+  background-color: #0e0e0e;
+  color: #fff;
+  border: 3px solid #0e0e0e;
+}
+
+
+
+
+@keyframes textbox {
+    from {
+      border:  3px solid transparent;
+      background-color: #e7e7e7;
+    }
+    to {
+      border:  3px solid #0062ff;
+      background-color: #fff;
+    }
+  }
+  
+  @keyframes textboxout {
+    from {
+      border:  3px solid #0062ff;
+      background-color: #fff;
+    }
+    to {
+      border:  3px solid transparent;
+      background-color: #e7e7e7;
+    }
+  }
+
+
+  @media (max-width: 762px) {
+    header .contentt h1{
+      font-size: 15vw;
+    }
+  }
