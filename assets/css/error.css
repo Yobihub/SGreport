@@ -1,0 +1,71 @@
+*{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url(../img/background.jpg) no-repeat, center / contain no-repeat url("/img/place.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header{
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    font-weight: 500;
+    color: #fff;
+    font-size: 50px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.contentt{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    text-align: center;
+    z-index: 0;
+}
+
+svg{
+    padding-top: 5px;
+    fill: #fff;
+    width: 30px;
+}
+
+button{
+    background: #006eff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+
+input{
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+}
+
+.contentt a{
+    background: #006eff;
+}
+
+footer{
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+}

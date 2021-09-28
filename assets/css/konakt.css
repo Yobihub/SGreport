@@ -1,0 +1,267 @@
+#map {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    margin-bottom: 200px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    user-select: none;
+    z-index: 2;
+}
+
+#map a, #map a:hover {
+    border: none;
+}
+
+#map .mapboxgl-ctrl-logo{
+    display: none;
+}
+
+#map button.mapboxgl-ctrl-compass span.mapboxgl-ctrl-icon{
+  transition: 0s;
+}
+
+
+#map .mapboxgl-ctrl-fullscreen{
+  display: none;
+}
+
+#menu {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 3px;
+    padding-top: 6px;
+    background: #efefef;
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+    user-select: none;
+    display: none;                              /*temporary Bug - no feature*/
+}
+
+#menu input{
+    display: none;
+}
+
+#menu label{
+    cursor: pointer;
+}
+
+#menu svg{
+    fill: #000;
+    width: 30px;
+}
+
+ul.contact li{
+    display: inline-block;
+    width: 49vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul.contact li.mapper{
+    height: 100vh;
+}
+
+#contact input, #contact textarea{
+    width: 40%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid transparent;
+    transition: 0s;
+    animation-name: textboxout;
+    animation-duration: .2s;
+    background-color: #e7e7e7;
+}
+
+#contact textarea{
+  max-height: 65vh;
+  height: 30vh;
+  padding: 7px;
+  resize: vertical;
+  width: 80%;
+}
+
+#contact textarea:focus, #contact input:focus{
+  animation-name: textbox;
+  animation-duration: .2s;
+  border:  3px solid #0062ff;
+  transition: 0s;
+  background-color: #fff;
+}
+
+#contact button.send{
+    background-color: #0062ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 40px;
+}
+
+#contact button.send:hover{
+    background-color: #0044b3;
+}
+
+#contact button.send:active{
+    background-color: #002c74;
+}
+
+#contact button.reset{
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 40px;
+  padding: 2px 5px;
+  border: 3px solid;
+  color: #222;
+  background: transparent;
+}
+
+#contact button.reset:hover{
+  background-color: #222;
+  color: #fff;
+  border: 3px solid #222;
+}
+
+#contact button.reset:active{
+  background-color: #0e0e0e;
+  color: #fff;
+  border: 3px solid #0e0e0e;
+}
+
+
+
+
+@keyframes textbox {
+    from {
+      border:  3px solid transparent;
+      background-color: #e7e7e7;
+    }
+    to {
+      border:  3px solid #0062ff;
+      background-color: #fff;
+    }
+  }
+  
+  @keyframes textboxout {
+    from {
+      border:  3px solid #0062ff;
+      background-color: #fff;
+    }
+    to {
+      border:  3px solid transparent;
+      background-color: #e7e7e7;
+    }
+  }
+
+  @keyframes down {
+    from {
+      top: -100px;
+    }
+    to {
+        top: 0;
+    }
+  }
+
+
+
+
+
+@media (max-width: 870px) {
+  ul.contact li{
+      display: block;
+      width: 100vw;
+  }
+
+  ul.contact li.mapper{
+    height: 50vh;
+  }
+
+  #map {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+}
+}
+
+@media (max-width: 550px) {
+    #map {
+        height: 40vh;
+    }
+
+    ul.contact li.mapper{
+        height: 43vh;
+      }
+
+      #contact input{
+        width: 80%;
+      }
+
+      #map .mapboxgl-ctrl-fullscreen{
+        display: block;
+      }
+}
+
+@media (max-width: 360px) {
+    #contact button{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+  text-align: center;
+}
+
+
+nav.sticky{
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+  animation: down;
+  animation-duration: .4s;
+}
+
+.menu-list li a{
+  color: #222;
+}
+
+.menu-list li a.active:hover{
+  color: rgb(29, 29, 29);
+}
+
+nav.sticky li a.active:hover{
+  color: #fff;
+}
+
+nav.sticky .menu-list li a{
+  color: rgb(255, 255, 255);
+}

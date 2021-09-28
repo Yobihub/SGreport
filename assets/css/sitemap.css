@@ -1,0 +1,68 @@
+.contentt{
+  font-size: 24px;
+}
+
+.menu-list li a{
+    color: #222;
+  }
+
+  nav.sticky .menu-list li a{
+    color: #fff;
+  }
+
+  .menu-btn svg{
+    fill: #000;
+    color: #000;
+  }
+
+  nav.sticky .menu-btn svg{
+    fill: #fff;
+    color: #fff;
+  }
+
+header{
+    height: 40vh;
+}
+
+header h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    font-size: 10vh;
+    font-weight: 300;
+}
+
+header h1 b{
+    font-weight: 600;
+}
+
+.contentt{
+  padding: 30px;
+}
+
+ul li{
+  list-style: none;
+}
+
+
+
+.contentt ul li p{
+  font-size: 25px;
+  margin: 0;
+  margin-top: 15px;
+  
+}
+
+.contentt ul{
+  display: inline-block;
+  vertical-align: top;
+  margin: 14px;
+}
+
+@media (max-width: 868px) {
+  .menu-list li a{
+    color: #fff;
+  }
+}

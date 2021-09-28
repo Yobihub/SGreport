@@ -26,6 +26,7 @@ a{
 
 a:hover{
     border-bottom: 3px solid;
+    text-decoration: none;
 }
 
 a.button{
@@ -151,7 +152,7 @@ iframe.yt-player{
 }
 
 .menu-list li a.active:hover{
-  color: #fff;
+  opacity: 1;
 }
 
 .menu-list li a.button{
@@ -243,6 +244,7 @@ footer svg{
 
 footer ul li{
   width: 30%;
+  text-align: center;
 }
 
 
@@ -254,6 +256,11 @@ footer ul li{
 @media (max-width: 900px) {
     .content{
       padding: 0 30px;
+    }
+
+    footer ul li{
+      display: block;
+      width: 100%;
     }
   }
   
@@ -314,6 +321,11 @@ footer ul li{
       footer h2{
           margin-top: 1em;
       }
+
+      footer ul li{
+        display: block;
+        width: 100%;
+      }
   }
   
   @media (max-width: 657px) {
@@ -329,12 +341,13 @@ footer ul li{
     }
   }
 
-  @media (max-width: 332px) {
+  @media (max-width: 400px) {
     footer h1{
       font-size: 25px;
     }
 
     footer{
-      padding: 10px;
+      padding: 0px;
+      padding-bottom: 10px;
     }
   }
