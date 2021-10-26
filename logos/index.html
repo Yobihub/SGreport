@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entwürfe - Logos</title>
+</head>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #006f98;
+    font-size: 25px;
+}
+
+img{
+    max-width: 90vw;
+    max-width: 50vh;
+    padding: 10px;
+    transition: .14s;
+    border: 3px dashed transparent;
+}
+
+img:hover{
+    border: 3px dashed dodgerblue;
+    border-radius: 20px;
+}
+
+button{
+    background-color: #006f98;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .14s ease-in-out;
+    margin: 10px;
+}
+
+button:hover{
+    color: rgba(255, 255, 255, 0.486);
+    background-color: #009870;
+    border-radius: 20px;
+}
+
+button:active{
+    opacity: .7;
+}
+
+button.reset:hover{
+    color: rgba(255, 255, 255, 0.486);
+    background-color: #983000;
+    border-radius: 20px;
+}
+
+header{
+    background-color: rgba(31, 31, 31, 0.712);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    width: initial;
+    text-align: center;
+}
+
+
+
+
+/*animation*/
+    body{
+    background: linear-gradient(221deg, #009870, #006f98, #001198, #a000a8);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 27s ease infinite;
+    -moz-animation: AnimationName 27s ease infinite;
+    -o-animation: AnimationName 27s ease infinite;
+    animation: AnimationName 27s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+select{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+}
+</style>
+<body>
+    <header>
+    <a href="/">Zur Startseite</a>
+    <h1>Logo Entwürfe SG News</h1>
+    <h3>Welches Design gefällt dir am besten? Wähle es aus und stimme ab!</h3>
+    <form name="SelectionLogos" method="POST" data-netlify="true">
+    <a href="javascript:select1();">
+        <img src="logo3.png" id="p1">
+    </a>
+    <a href="javascript:select2();" download="LogoMakr-3eGTqF.png">
+        <img src="logo2.png" id="p2">
+    </a>
+    <a href="javascript:select3();" download="LogoMakr-0bWPGg.png">
+        <img src="logo1.png" id="p3">
+    </a>
+    <p>
+    <select required id="select">
+        <option value="" disabled selected>E</option>
+        <option value="Yobi">1</option>
+        <option value="Micro">2</option>
+        <option value="Svenja">3</option>
+    </select>
+</p>
+    <p><button type="submit">Senden</button><button type="reset" onclick="resetAll();" class="reset">Reset</button></p>
+    </form>
+</header>
+</body>
+<script>
+    function select1() { document.getElementById("select").selectedIndex = 1;
+    document.getElementById("p1").style.backgroundColor = "rgba(49, 49, 49, 0.645)";
+    document.getElementById("p2").style.backgroundColor = "transparent";
+    document.getElementById("p3").style.backgroundColor = "transparent";
+}
+
+function select2() { document.getElementById("select").selectedIndex = 2;
+    document.getElementById("p1").style.backgroundColor = "transparent";
+    document.getElementById("p2").style.backgroundColor = "rgba(49, 49, 49, 0.645)";
+    document.getElementById("p3").style.backgroundColor = "transparent";
+}
+
+function select3() { document.getElementById("select").selectedIndex = 3;
+    document.getElementById("p1").style.backgroundColor = "transparent";
+    document.getElementById("p2").style.backgroundColor = "transparent";
+    document.getElementById("p3").style.backgroundColor = "rgba(49, 49, 49, 0.645)";
+}
+
+function resetAll(){ document.getElementById("select").selectedIndex = 0;
+    document.getElementById("p1").style.backgroundColor = "transparent";
+    document.getElementById("p2").style.backgroundColor = "transparent";
+    document.getElementById("p3").style.backgroundColor = "transparent";
+}
+</script>
+</html>
