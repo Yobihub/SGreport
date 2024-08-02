@@ -9,7 +9,8 @@
         zoom: 16, // starting zoom
         pitch: 35,
         container: 'map',
-        antialias: true
+        antialias: true,
+        cooperativeGestures: true
     });
 
     
@@ -127,18 +128,3 @@
             map.setStyle('mapbox://styles/mapbox/' + layerId);
         };
     }
-
-
-
-    //hold ctrl to scroll-zoom
-    map.scrollZoom.disable();
-    map.scrollZoom.setWheelZoomRate(0.02); // Default 1/450
-    
-    map.on("wheel", event => {
-      if (event.originalEvent.ctrlKey) { // Check if CTRL key is pressed
-        event.originalEvent.preventDefault(); // Prevent chrome/firefox default behavior
-        if (!map.scrollZoom._enabled) map.scrollZoom.enable(); // Enable zoom only if it's disabled
-      } else {
-        if (map.scrollZoom._enabled) map.scrollZoom.disable(); // Disable zoom only if it's enabled
-      }
-    });
