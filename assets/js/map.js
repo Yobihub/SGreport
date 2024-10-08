@@ -1,7 +1,7 @@
 //Perfonrmance Problems: maybe solution: https://docs.mapbox.com/help/troubleshooting/mapbox-gl-js-performance/#combine-vector-tile-sources
 
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoieW9iaWRldiIsImEiOiJja3R3enI3ZTIxNzN3MnJxdHhnZzQ1cWl4In0.wHWxcq9W8Nt9Q6bHL1aOXQ';
+	mapboxgl.accessToken = ''; // put your API key here
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
